@@ -1,0 +1,224 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dataTables_length {
+  margin-bottom: 10px;
+}
+
+/* Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px; /* Reduced padding */
+  line-height: 1.4; /* Slightly smaller line height */
+}
+
+/* Container with a modern card design */
+.container {
+  max-width: 1000px; /* Reduced maximum width */
+  margin: auto;
+  padding: 20px; /* Reduced padding */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+  border-radius: 8px; /* Smaller rounded corners */
+  overflow-x: auto;
+  transition: box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+/* Hover effect on container */
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px; /* Smaller spacing between rows */
+  table-layout: auto;
+}
+
+th,
+td {
+  padding: 10px; /* Reduced padding for a smaller, tighter look */
+  text-align: left;
+  border: none; /* Remove borders for a clean, modern look */
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+/* Modern Header Styling */
+th {
+  background-color: #4a90e2; /* Sleek blue color for the header */
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0; /* Smaller rounded corners on top */
+}
+
+/* Table Row Styling */
+tr {
+  background-color: #ffffff;
+  border-radius: 6px; /* Smaller rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Smaller shadow for rows */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+tr:hover {
+  background-color: #f0f0f0; /* Lighter grey on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow on hover */
+}
+
+td {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  border-radius: 6px; /* Smaller rounded corners */
+  transition: background-color 0.3s ease;
+}
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 8px; /* Further reduced padding for small screens */
+    font-size: 0.8rem; /* Smaller font size for mobile */
+  }
+
+  .container {
+    padding: 15px; /* Reduced padding on small screens */
+  }
+}
+
+/* .country-columns {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.country-box {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.country-flag {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.country-count {
+  font-size: 16px;
+} */
+
+/*.country-columns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.country-box {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.country-flag {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.country-count {
+  font-size: 16px;
+}*/
+
+
+.country-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.country-box {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.country-flag {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.country-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.LogoutButton {
+  margin-bottom: 10px;
+  background-color: #ff4d4d; /* Bright red for urgency */
+  color: #fff; /* White text for contrast */
+  padding: 12px 24px; /* Adequate padding for better appearance */
+  font-size: 16px; /* Readable font size */
+  border: none; /* No border for a clean look */
+  border-radius: 8px; /* Rounded corners for a modern design */
+  cursor: pointer; /* Pointer to indicate clickability */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: inline-block;
+  font-weight: bold;
+}
+
+.LogoutButton:hover {
+  background-color: #e63946; /* Darken the red on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.LogoutButton:active {
+  background-color: #d62828; /* Slightly darker when clicked */
+  transform: translateY(1px); /* Small press effect */
+}
+
+.LogoutButton:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.4); /* Custom focus ring */
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .LogoutButton {
+    font-size: 14px; /* Slightly smaller font */
+    padding: 10px 20px; /* Reduced padding */
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .LogoutButton {
+    font-size: 12px; /* Even smaller font */
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 6px; /* Slightly smaller border-radius */
+  }
+}
+
+.paginate_button.current {
+    background-color: #007bff; /* Change to your preferred background color */
+    color: white; /* Text color */
+    padding: 8px 12px; /* Padding to make the button bigger */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.paginate_button.current:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
